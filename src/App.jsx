@@ -4,8 +4,8 @@ import { ref, onValue, set } from "firebase/database"
 import { db } from "./firebase"
 
 const App = () => {
-  const [humidity, setHumidity] = useState(false);
-  const [temperature, setTemperature] = useState(false);
+  const [humidity, setHumidity] = useState(0);
+  const [temperature, setTemperature] = useState(0);
   const [mode, setMode] = useState(false);
   const [lamp, setLamp] = useState(false);
   const [exaust, setExaust] = useState(false);
