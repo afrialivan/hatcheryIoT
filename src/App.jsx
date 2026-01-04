@@ -61,10 +61,8 @@ const App = () => {
     set(ref(db, "hatchery/Control/Sirkulasi"), !kipas)
   }
 
-
-
   return (
-    <div className="bg-white h-screen lg:pb-20 w-screen">
+    <div className="bg-white h-screen md:h-full lg:pb-80 w-screen">
       <div className="header h-20 px-9 bg-gray-0 flex items-center">
         <img src={images.logo}
           alt="Logo"
@@ -86,10 +84,10 @@ const App = () => {
           <h1 className="text-1xl">Kelembapan</h1>
         </div>
       </div>
-      <div className="shadow-lg mt-8 mx-9 flex flex-col gap-0 justify-center items-center h-20 bg-gray-100 rounded-3xl">
+      {/* <div className="shadow-lg mt-8 mx-9 flex flex-col gap-0 justify-center items-center h-20 bg-gray-100 rounded-3xl">
         <h1 className="text-2xl text-blue-400">10 menit lagi</h1>
         <h1 className="text-2xl text-gray-500">Rak Berotasi</h1>
-      </div>
+      </div> */}
       <div className="shadow-lg mt-8 mx-9 flex flex-col gap-0 justify-center items-center h-20 bg-gray-100 rounded-3xl">
         <input type="checkbox"
           // defaultChecked
@@ -126,7 +124,7 @@ const App = () => {
             </div>
           </div>
           <div className="flex flex-col gap-1 items-center">
-            <h1 className="text-gray-800">Tombol Zikir</h1>
+            <h1 className="text-gray-800 font-bold">Tombol Zikir</h1>
             <h1 className="text-gray-800 text-sm">{zikir}</h1>
             <button
               onClick={() => setZikir(zikir + 1)}
