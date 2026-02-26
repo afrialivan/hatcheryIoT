@@ -102,13 +102,6 @@ const App = () => {
         (< div className="grid grid-cols-2 gap-3 items-center justify-center shadow-lg mt-4 px-6 py-4 mx-9 rounded-2xl bg-gray-100">
           <div className="flex flex-col gap-2">
             <div className="flex justify-between gap-3">
-              <h1 className="text-gray-800">Lampu</h1>
-              <input type="checkbox"
-                checked={lamp}
-                onChange={() => toggleLamp()}
-                className="toggle toggle-primary bg-gray-800" />
-            </div>
-            <div className="flex justify-between gap-3">
               <h1 className="text-gray-800">Exaust</h1>
               <input type="checkbox"
                 checked={exaust}
@@ -123,7 +116,14 @@ const App = () => {
                 className="toggle toggle-primary bg-gray-800" />
             </div>
           </div>
-          <div className="flex flex-col gap-1 items-center">
+          <div className="flex justify-between gap-3">
+            <h1 className="text-gray-800">Lampu</h1>
+            <input type="checkbox"
+              checked={lamp}
+              onChange={() => toggleLamp()}
+              className="toggle toggle-primary bg-gray-800" />
+          </div>
+          {/* <div className="flex flex-col gap-1 items-center">
             <h1 className="text-gray-800 font-bold">Tombol Zikir</h1>
             <h1 className="text-gray-800 text-sm">{zikir}</h1>
             <button
@@ -139,7 +139,7 @@ const App = () => {
               active:translate-y-1
               active:shadow-[0_2px_0_#3730a3]
             "></button>
-          </div>
+          </div> */}
         </div >
         )}
     </div >
